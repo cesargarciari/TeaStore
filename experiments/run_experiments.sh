@@ -148,7 +148,7 @@ check_prerequisites() {
   local http_code
   http_code=$(curl -s -o /dev/null -w "%{http_code}" \
     --connect-timeout 5 --max-time 10 \
-    "http://${NODE_IP}:${WEBUI_PORT}/tools.descartes.teastore.webui/" 2>/dev/null || echo "000")
+    "http://${NODE_IP}:${WEBUI_PORT}/tools.descartes.teastore.webui/" 2>/dev/null) || true
   if [[ "$http_code" != "200" ]]; then
     die "WebUI returned HTTP ${http_code} (expected 200).
   Check: kubectl get pods

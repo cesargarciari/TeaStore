@@ -85,12 +85,29 @@ k3d_cluster_running() {
   [[ -n "$total" && "$running" == "$total" && "$total" -gt 0 ]]
 }
 
+k3d_port_mapped() {
+  # k3d names the loadbalancer container "k3d-<cluster>-serverlb".
+  # docker inspect HostConfig.PortBindings contains "<port>/tcp" only if the
+  # cluster was created with --port <port>:<port>@loadbalancer.
+  docker inspect "k3d-${K3D_CLUSTER_NAME}-serverlb" 2>/dev/null \
+    | grep -q "\"${WEBUI_NODEPORT}/tcp\""
+}
+
 setup_k3d_cluster() {
   if $RESTART && k3d_cluster_exists; then
     log "Stopping k3d cluster '${K3D_CLUSTER_NAME}'..."
     k3d cluster stop "$K3D_CLUSTER_NAME"
     log "Waiting 5s for Docker containers to exit..."
     sleep 5
+  fi
+
+  # If the cluster exists but was created without the NodePort mapping, it must
+  # be deleted and recreated — k3d does not support adding port maps post-creation.
+  if k3d_cluster_exists && ! k3d_port_mapped; then
+    warn "Cluster '${K3D_CLUSTER_NAME}' exists but port ${WEBUI_NODEPORT} is not mapped to localhost."
+    warn "This happens when the cluster was created before this script added --port to the create command."
+    log "Deleting cluster '${K3D_CLUSTER_NAME}' so it can be recreated with the correct port mapping..."
+    k3d cluster delete "$K3D_CLUSTER_NAME"
   fi
 
   if ! k3d_cluster_exists; then
@@ -222,8 +239,10 @@ verify_webui() {
   local retries=18   # 18 × 10s = 3 min — TeaStore needs time for DB init
   for i in $(seq 1 $retries); do
     local http_code
+    # Use || true instead of || echo "000": curl already writes "000" via -w when
+    # it can't connect; a second echo would produce "000000" in the variable.
     http_code=$(curl -s -o /dev/null -w "%{http_code}" \
-      --connect-timeout 5 --max-time 10 "${url}" 2>/dev/null || echo "000")
+      --connect-timeout 5 --max-time 10 "${url}" 2>/dev/null) || true
 
     if [[ "$http_code" == "200" ]]; then
       ok "WebUI is responding (HTTP 200)."
