@@ -107,6 +107,13 @@ spec:
               value: "teastore-db"
             - name: DB_PORT
               value: "3306"
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "128Mi"
+            limits:
+              cpu: "1000m"
+              memory: "512Mi"
 ---
 apiVersion: v1
 kind: Service
@@ -150,6 +157,13 @@ spec:
               value: "teastore-auth"
             - name: REGISTRY_HOST
               value: "teastore-registry"
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "128Mi"
+            limits:
+              cpu: "1000m"
+              memory: "512Mi"
 ---
 apiVersion: v1
 kind: Service
@@ -193,6 +207,13 @@ spec:
               value: "teastore-image"
             - name: REGISTRY_HOST
               value: "teastore-registry"
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "128Mi"
+            limits:
+              cpu: "1000m"
+              memory: "512Mi"
 ---
 apiVersion: v1
 kind: Service
@@ -236,6 +257,13 @@ spec:
               value: "teastore-recommender"
             - name: REGISTRY_HOST
               value: "teastore-registry"
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "1000m"
+              memory: "512Mi"
 ---
 apiVersion: v1
 kind: Service
@@ -279,6 +307,13 @@ spec:
               value: "teastore-webui"
             - name: REGISTRY_HOST
               value: "teastore-registry"
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "1000m"
+              memory: "512Mi"
 ---
 apiVersion: v1
 kind: Service
