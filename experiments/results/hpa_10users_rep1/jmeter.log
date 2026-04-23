@@ -1,0 +1,14 @@
+WARNING: package sun.awt.X11 not in java.desktop
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using ./experiments/../examples/jmeter/teastore_browse.jmx
+Starting standalone test @ 2026 Apr 23 13:21:59 MDT (1776972119287)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +      1 in 00:00:02 =    0.6/s Avg:     9 Min:     9 Max:     9 Err:     1 (100.00%) Active: 1 Started: 1 Finished: 0
+summary +     76 in 00:00:29 =    2.6/s Avg:     0 Min:     0 Max:     7 Err:    76 (100.00%) Active: 10 Started: 10 Finished: 0
+summary =     77 in 00:00:31 =    2.5/s Avg:     1 Min:     0 Max:     9 Err:    77 (100.00%)
+summary +    147 in 00:00:30 =    4.9/s Avg:     1 Min:     0 Max:     6 Err:   147 (100.00%) Active: 10 Started: 10 Finished: 0
+summary =    224 in 00:01:01 =    3.7/s Avg:     1 Min:     0 Max:     9 Err:   224 (100.00%)
