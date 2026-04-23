@@ -63,14 +63,18 @@ resolve_node_ip() {
 
   log "Auto-detecting NODE_IP..."
 
-  # k3d exposes NodePorts on localhost
-  if command -v k3d &>/dev/null && k3d cluster list 2>/dev/null | grep -q 'k3s'; then
+  # k3d routes NodePort traffic through its loadbalancer container, which is
+  # mapped to localhost via --port at cluster creation time.
+  # Detection: k3d is installed AND at least one cluster exists (no 'k3s' grep —
+  # that word never appears in k3d cluster list output).
+  if command -v k3d &>/dev/null && \
+     k3d cluster list --no-headers 2>/dev/null | grep -q '.'; then
     NODE_IP="localhost"
     ok "k3d detected — NODE_IP=localhost"
     return
   fi
 
-  # minikube reports its IP
+  # minikube reports its own IP
   if command -v minikube &>/dev/null; then
     NODE_IP=$(minikube ip 2>/dev/null || echo "")
     if [[ -n "$NODE_IP" ]]; then
