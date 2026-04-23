@@ -1,0 +1,34 @@
+2026-04-23 09:58:18,784 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-04-23 09:58:18,796 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties
+2026-04-23 09:58:18,796 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/system.properties
+2026-04-23 09:58:18,796 INFO o.a.j.JMeter: Setting JMeter property: host=localhost
+2026-04-23 09:58:18,796 INFO o.a.j.JMeter: Setting JMeter property: port=8080
+2026-04-23 09:58:18,796 INFO o.a.j.JMeter: Setting JMeter property: numThreads=10
+2026-04-23 09:58:18,796 INFO o.a.j.JMeter: Setting JMeter property: rampUp=30
+2026-04-23 09:58:18,796 INFO o.a.j.JMeter: Setting JMeter property: durationSec=600
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: Version 5.6.3
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: java.version=21.0.11
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: os.name=Mac OS X
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: os.arch=aarch64
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: os.version=26.3.1
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: java.awt.headless=true
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-04-23 09:58:18,799 INFO o.a.j.JMeter: Available Processors =14
+2026-04-23 09:58:18,804 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-04-23 09:58:18,804 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-04-23 09:58:18,804 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.3/libexec
+2026-04-23 09:58:18,804 INFO o.a.j.JMeter: user.dir  =/Users/cesargarcia/Desktop/University/TeaStore
+2026-04-23 09:58:18,804 INFO o.a.j.JMeter: PWD       =/Users/cesargarcia/Desktop/University/TeaStore
+2026-04-23 09:58:18,806 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: MacBook-Pro-C.local FullName: localhost
+2026-04-23 09:58:18,813 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/Users/cesargarcia/Desktop/University/TeaStore/report_hpa_10users_rep1'
+2026-04-23 09:58:18,813 ERROR o.a.j.JMeter: An error occurred: 
+org.apache.jmeter.report.config.ConfigurationException: The file /Users/cesargarcia/Desktop/University/TeaStore/teastore_browse.jmx doesn't exist or can't be opened
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:950) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:940) ~[ApacheJMeter_core.jar:5.6.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:508) [ApacheJMeter_core.jar:5.6.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) [ApacheJMeter.jar:5.6.3]
