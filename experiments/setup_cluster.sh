@@ -1,48 +1,70 @@
 #!/usr/bin/env bash
-# Deploy TeaStore to an existing k3d cluster and verify it is reachable.
-# Run this once before starting experiments.
-#
-# Prerequisites:
-#   - k3d cluster running:  k3d cluster create teastore
-#   - kubectl pointing at it (k3d does this automatically)
+# One-time setup: create k3d cluster, deploy TeaStore, install metrics-server.
+# Run this once. Then generate the DB in the browser before running experiments.
 #
 # Usage:
 #   ./experiments/setup_cluster.sh
 
 set -e
 
-REPO="$(cd "$(dirname "$0")/.." && pwd)"
-
-echo "--- Deploying TeaStore ---"
-kubectl apply -f "$REPO/examples/kubernetes/teastore-clusterip.yaml"
-
-echo "--- Waiting for all pods to be ready ---"
-for svc in teastore-db teastore-registry teastore-persistence \
-           teastore-auth teastore-image teastore-recommender teastore-webui; do
-  kubectl rollout status deployment/$svc --timeout=180s
-done
-
-echo "--- Verifying WebUI via port-forward ---"
-# Kill any leftover port-forward on 8080 first
-fuser -k 8080/tcp 2>/dev/null || lsof -ti:8080 | xargs kill 2>/dev/null || true
-
-kubectl port-forward svc/teastore-webui 8080:8080 >/dev/null 2>&1 &
-PF=$!
-sleep 5
-
-CODE=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:8080/tools.descartes.teastore.webui/) || true
-
-kill $PF 2>/dev/null || true
-wait $PF 2>/dev/null || true
-
-if [ "$CODE" = "200" ]; then
-  echo ""
-  echo "✓ TeaStore is ready (HTTP 200)."
-  echo "  Run experiments: ./experiments/run_experiments.sh"
+echo "=== Step 1: Create k3d cluster ==="
+if k3d cluster list | grep -q teastore; then
+  echo "Cluster 'teastore' already exists — skipping create."
 else
-  echo ""
-  echo "✗ WebUI returned HTTP $CODE — pods may still be initialising."
-  echo "  Check: kubectl get pods"
-  echo "  Retry: ./experiments/setup_cluster.sh"
-  exit 1
+  k3d cluster create teastore --agents 3
 fi
+
+echo ""
+echo "=== Step 2: Deploy TeaStore ==="
+kubectl apply -f https://raw.githubusercontent.com/DescartesResearch/TeaStore/master/examples/kubernetes/teastore-clusterip.yaml
+
+echo ""
+echo "=== Step 3: Wait for all pods ==="
+kubectl wait --for=condition=available deployment \
+  teastore-db teastore-registry teastore-persistence \
+  teastore-auth teastore-image teastore-recommender teastore-webui \
+  --timeout=300s
+
+echo ""
+echo "=== Step 4: Install metrics-server (needed for HPA) ==="
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+# k3d uses self-signed certs — patch to skip TLS verification
+kubectl patch deployment metrics-server -n kube-system \
+  --type=json \
+  -p='[{"op":"add","path":"/spec/template/spec/containers/0/args/-","value":"--kubelet-insecure-tls"}]'
+kubectl rollout status deployment/metrics-server -n kube-system --timeout=60s
+
+echo ""
+echo "=== Step 5: Add CPU resource requests (required for HPA to measure CPU%) ==="
+# Patch each scalable deployment with a CPU request so metrics-server can
+# calculate a utilisation percentage for HPA decisions.
+for svc in teastore-webui teastore-auth teastore-image teastore-recommender teastore-persistence; do
+  kubectl patch deployment $svc --type=json -p='[
+    {"op":"add","path":"/spec/template/spec/containers/0/resources","value":{
+      "requests":{"cpu":"100m","memory":"128Mi"},
+      "limits":  {"cpu":"500m","memory":"256Mi"}
+    }}
+  ]'
+done
+# recommender does more CPU work — give it a slightly higher request
+kubectl patch deployment teastore-recommender --type=json -p='[
+  {"op":"add","path":"/spec/template/spec/containers/0/resources","value":{
+    "requests":{"cpu":"150m","memory":"256Mi"},
+    "limits":  {"cpu":"500m","memory":"512Mi"}
+  }}
+]'
+kubectl rollout status deployment/teastore-recommender --timeout=120s
+kubectl rollout status deployment/teastore-webui       --timeout=120s
+
+echo ""
+echo "=== Step 6: Open the WebUI and generate the database ==="
+echo ""
+echo "  Run in a separate terminal:"
+echo "    kubectl port-forward svc/teastore-webui 8080:8080"
+echo ""
+echo "  Then open: http://localhost:8080/tools.descartes.teastore.webui/"
+echo "  Go to: Tools → Generate DB (click the button, wait for it to finish)"
+echo "  The page should show the TeaStore shop with products after generation."
+echo ""
+echo "  Once the database is generated, run:"
+echo "    ./experiments/run_experiments.sh"
