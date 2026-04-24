@@ -1,0 +1,462 @@
+22:26:18 teastore-auth          1/1   1     1     6h7m
+teastore-db            1/1   1     1     6h7m
+teastore-image         1/1   1     1     6h7m
+teastore-persistence   1/1   1     1     6h7m
+teastore-recommender   2/2   2     2     6h7m
+teastore-registry      1/1   1     1     6h7m
+teastore-webui         1/1   1     1     6h7m
+22:26:28 teastore-auth          1/1   1     1     6h7m
+teastore-db            1/1   1     1     6h7m
+teastore-image         1/1   1     1     6h7m
+teastore-persistence   1/1   1     1     6h7m
+teastore-recommender   2/2   2     2     6h7m
+teastore-registry      1/1   1     1     6h7m
+teastore-webui         1/1   1     1     6h7m
+22:26:38 teastore-auth          1/1   1     1     6h7m
+teastore-db            1/1   1     1     6h7m
+teastore-image         1/1   1     1     6h7m
+teastore-persistence   1/1   1     1     6h7m
+teastore-recommender   2/2   2     2     6h7m
+teastore-registry      1/1   1     1     6h7m
+teastore-webui         1/1   1     1     6h7m
+22:26:49 teastore-auth          1/1   1     1     6h7m
+teastore-db            1/1   1     1     6h7m
+teastore-image         1/1   1     1     6h7m
+teastore-persistence   1/1   1     1     6h7m
+teastore-recommender   2/2   2     2     6h7m
+teastore-registry      1/1   1     1     6h7m
+teastore-webui         1/1   1     1     6h7m
+22:26:59 teastore-auth          1/1   1     1     6h7m
+teastore-db            1/1   1     1     6h7m
+teastore-image         1/1   1     1     6h7m
+teastore-persistence   1/1   1     1     6h7m
+teastore-recommender   2/2   2     2     6h7m
+teastore-registry      1/1   1     1     6h7m
+teastore-webui         1/1   1     1     6h7m
+22:27:09 teastore-auth          1/1   1     1     6h8m
+teastore-db            1/1   1     1     6h8m
+teastore-image         1/1   1     1     6h8m
+teastore-persistence   1/1   1     1     6h8m
+teastore-recommender   2/2   2     2     6h8m
+teastore-registry      1/1   1     1     6h8m
+teastore-webui         1/1   1     1     6h8m
+22:27:19 teastore-auth          1/1   1     1     6h8m
+teastore-db            1/1   1     1     6h8m
+teastore-image         1/1   1     1     6h8m
+teastore-persistence   1/1   1     1     6h8m
+teastore-recommender   2/2   2     2     6h8m
+teastore-registry      1/1   1     1     6h8m
+teastore-webui         1/1   1     1     6h8m
+22:27:30 teastore-auth          1/1   1     1     6h8m
+teastore-db            1/1   1     1     6h8m
+teastore-image         1/1   1     1     6h8m
+teastore-persistence   1/1   1     1     6h8m
+teastore-recommender   2/2   2     2     6h8m
+teastore-registry      1/1   1     1     6h8m
+teastore-webui         1/1   1     1     6h8m
+22:27:40 teastore-auth          1/1   1     1     6h8m
+teastore-db            1/1   1     1     6h8m
+teastore-image         1/1   1     1     6h8m
+teastore-persistence   1/1   1     1     6h8m
+teastore-recommender   2/2   2     2     6h8m
+teastore-registry      1/1   1     1     6h8m
+teastore-webui         1/1   1     1     6h8m
+22:27:50 teastore-auth          1/1   1     1     6h8m
+teastore-db            1/1   1     1     6h8m
+teastore-image         1/1   1     1     6h8m
+teastore-persistence   1/1   1     1     6h8m
+teastore-recommender   2/2   2     2     6h8m
+teastore-registry      1/1   1     1     6h8m
+teastore-webui         1/1   1     1     6h8m
+22:28:00 teastore-auth          1/1   1     1     6h9m
+teastore-db            1/1   1     1     6h9m
+teastore-image         1/1   1     1     6h9m
+teastore-persistence   1/1   1     1     6h9m
+teastore-recommender   2/2   2     2     6h9m
+teastore-registry      1/1   1     1     6h9m
+teastore-webui         1/1   1     1     6h9m
+22:28:11 teastore-auth          1/1   1     1     6h9m
+teastore-db            1/1   1     1     6h9m
+teastore-image         1/1   1     1     6h9m
+teastore-persistence   1/1   1     1     6h9m
+teastore-recommender   2/2   2     2     6h9m
+teastore-registry      1/1   1     1     6h9m
+teastore-webui         1/1   1     1     6h9m
+22:28:21 teastore-auth          1/1   1     1     6h9m
+teastore-db            1/1   1     1     6h9m
+teastore-image         1/1   1     1     6h9m
+teastore-persistence   1/1   1     1     6h9m
+teastore-recommender   2/2   2     2     6h9m
+teastore-registry      1/1   1     1     6h9m
+teastore-webui         1/1   1     1     6h9m
+22:28:31 teastore-auth          1/1   1     1     6h9m
+teastore-db            1/1   1     1     6h9m
+teastore-image         1/1   1     1     6h9m
+teastore-persistence   1/1   1     1     6h9m
+teastore-recommender   2/2   2     2     6h9m
+teastore-registry      1/1   1     1     6h9m
+teastore-webui         1/1   1     1     6h9m
+22:28:41 teastore-auth          1/1   1     1     6h9m
+teastore-db            1/1   1     1     6h9m
+teastore-image         1/1   1     1     6h9m
+teastore-persistence   1/1   1     1     6h9m
+teastore-recommender   2/2   2     2     6h9m
+teastore-registry      1/1   1     1     6h9m
+teastore-webui         1/1   1     1     6h9m
+22:28:52 teastore-auth          1/1   1     1     6h9m
+teastore-db            1/1   1     1     6h9m
+teastore-image         1/1   1     1     6h9m
+teastore-persistence   1/1   1     1     6h9m
+teastore-recommender   2/2   2     2     6h9m
+teastore-registry      1/1   1     1     6h9m
+teastore-webui         1/1   1     1     6h9m
+22:29:02 teastore-auth          1/1   1     1     6h10m
+teastore-db            1/1   1     1     6h10m
+teastore-image         1/1   1     1     6h10m
+teastore-persistence   1/1   1     1     6h10m
+teastore-recommender   2/2   2     2     6h10m
+teastore-registry      1/1   1     1     6h10m
+teastore-webui         1/1   1     1     6h10m
+22:29:12 teastore-auth          1/1   1     1     6h10m
+teastore-db            1/1   1     1     6h10m
+teastore-image         1/1   1     1     6h10m
+teastore-persistence   1/1   1     1     6h10m
+teastore-recommender   2/2   2     2     6h10m
+teastore-registry      1/1   1     1     6h10m
+teastore-webui         1/1   1     1     6h10m
+22:29:22 teastore-auth          1/1   1     1     6h10m
+teastore-db            1/1   1     1     6h10m
+teastore-image         1/1   1     1     6h10m
+teastore-persistence   1/1   1     1     6h10m
+teastore-recommender   2/2   2     2     6h10m
+teastore-registry      1/1   1     1     6h10m
+teastore-webui         1/1   1     1     6h10m
+22:29:33 teastore-auth          1/1   1     1     6h10m
+teastore-db            1/1   1     1     6h10m
+teastore-image         1/1   1     1     6h10m
+teastore-persistence   1/1   1     1     6h10m
+teastore-recommender   2/2   2     2     6h10m
+teastore-registry      1/1   1     1     6h10m
+teastore-webui         1/1   1     1     6h10m
+22:29:43 teastore-auth          1/1   1     1     6h10m
+teastore-db            1/1   1     1     6h10m
+teastore-image         1/1   1     1     6h10m
+teastore-persistence   1/1   1     1     6h10m
+teastore-recommender   2/2   2     2     6h10m
+teastore-registry      1/1   1     1     6h10m
+teastore-webui         1/1   1     1     6h10m
+22:29:53 teastore-auth          1/1   1     1     6h10m
+teastore-db            1/1   1     1     6h10m
+teastore-image         1/1   1     1     6h10m
+teastore-persistence   1/1   1     1     6h10m
+teastore-recommender   2/2   2     2     6h10m
+teastore-registry      1/1   1     1     6h10m
+teastore-webui         1/1   1     1     6h10m
+22:30:03 teastore-auth          1/1   1     1     6h11m
+teastore-db            1/1   1     1     6h11m
+teastore-image         1/1   1     1     6h11m
+teastore-persistence   1/1   1     1     6h11m
+teastore-recommender   2/2   2     2     6h11m
+teastore-registry      1/1   1     1     6h11m
+teastore-webui         1/1   1     1     6h11m
+22:30:14 teastore-auth          1/1   1     1     6h11m
+teastore-db            1/1   1     1     6h11m
+teastore-image         1/1   1     1     6h11m
+teastore-persistence   1/1   1     1     6h11m
+teastore-recommender   2/2   2     2     6h11m
+teastore-registry      1/1   1     1     6h11m
+teastore-webui         1/1   1     1     6h11m
+22:30:24 teastore-auth          1/1   1     1     6h11m
+teastore-db            1/1   1     1     6h11m
+teastore-image         1/1   1     1     6h11m
+teastore-persistence   1/1   1     1     6h11m
+teastore-recommender   2/2   2     2     6h11m
+teastore-registry      1/1   1     1     6h11m
+teastore-webui         1/1   1     1     6h11m
+22:30:34 teastore-auth          1/1   1     1     6h11m
+teastore-db            1/1   1     1     6h11m
+teastore-image         1/1   1     1     6h11m
+teastore-persistence   1/1   1     1     6h11m
+teastore-recommender   2/2   2     2     6h11m
+teastore-registry      1/1   1     1     6h11m
+teastore-webui         1/1   1     1     6h11m
+22:30:44 teastore-auth          1/1   1     1     6h11m
+teastore-db            1/1   1     1     6h11m
+teastore-image         1/1   1     1     6h11m
+teastore-persistence   1/1   1     1     6h11m
+teastore-recommender   2/2   2     2     6h11m
+teastore-registry      1/1   1     1     6h11m
+teastore-webui         1/1   1     1     6h11m
+22:30:55 teastore-auth          1/1   1     1     6h11m
+teastore-db            1/1   1     1     6h11m
+teastore-image         1/1   1     1     6h11m
+teastore-persistence   1/1   1     1     6h11m
+teastore-recommender   2/2   2     2     6h11m
+teastore-registry      1/1   1     1     6h11m
+teastore-webui         1/1   1     1     6h11m
+22:31:05 teastore-auth          1/1   1     1     6h12m
+teastore-db            1/1   1     1     6h12m
+teastore-image         1/1   1     1     6h12m
+teastore-persistence   1/1   1     1     6h12m
+teastore-recommender   2/2   2     2     6h12m
+teastore-registry      1/1   1     1     6h12m
+teastore-webui         1/1   1     1     6h12m
+22:31:15 teastore-auth          1/1   1     1     6h12m
+teastore-db            1/1   1     1     6h12m
+teastore-image         1/1   1     1     6h12m
+teastore-persistence   1/1   1     1     6h12m
+teastore-recommender   2/2   2     2     6h12m
+teastore-registry      1/1   1     1     6h12m
+teastore-webui         1/1   1     1     6h12m
+22:31:26 teastore-auth          1/1   1     1     6h12m
+teastore-db            1/1   1     1     6h12m
+teastore-image         1/1   1     1     6h12m
+teastore-persistence   1/1   1     1     6h12m
+teastore-recommender   2/2   2     2     6h12m
+teastore-registry      1/1   1     1     6h12m
+teastore-webui         1/1   1     1     6h12m
+22:31:36 teastore-auth          1/1   1     1     6h12m
+teastore-db            1/1   1     1     6h12m
+teastore-image         1/1   1     1     6h12m
+teastore-persistence   1/1   1     1     6h12m
+teastore-recommender   2/2   2     2     6h12m
+teastore-registry      1/1   1     1     6h12m
+teastore-webui         1/1   1     1     6h12m
+22:31:46 teastore-auth          1/1   1     1     6h12m
+teastore-db            1/1   1     1     6h12m
+teastore-image         1/1   1     1     6h12m
+teastore-persistence   1/1   1     1     6h12m
+teastore-recommender   2/2   2     2     6h12m
+teastore-registry      1/1   1     1     6h12m
+teastore-webui         1/1   1     1     6h12m
+22:31:56 teastore-auth          1/1   1     1     6h12m
+teastore-db            1/1   1     1     6h12m
+teastore-image         1/1   1     1     6h12m
+teastore-persistence   1/1   1     1     6h12m
+teastore-recommender   2/2   2     2     6h12m
+teastore-registry      1/1   1     1     6h12m
+teastore-webui         1/1   1     1     6h12m
+22:32:07 teastore-auth          1/1   1     1     6h13m
+teastore-db            1/1   1     1     6h13m
+teastore-image         1/1   1     1     6h13m
+teastore-persistence   1/1   1     1     6h13m
+teastore-recommender   2/2   2     2     6h13m
+teastore-registry      1/1   1     1     6h13m
+teastore-webui         1/1   1     1     6h13m
+22:32:17 teastore-auth          1/1   1     1     6h13m
+teastore-db            1/1   1     1     6h13m
+teastore-image         1/1   1     1     6h13m
+teastore-persistence   1/1   1     1     6h13m
+teastore-recommender   2/2   2     2     6h13m
+teastore-registry      1/1   1     1     6h13m
+teastore-webui         1/1   1     1     6h13m
+22:32:27 teastore-auth          1/1   1     1     6h13m
+teastore-db            1/1   1     1     6h13m
+teastore-image         1/1   1     1     6h13m
+teastore-persistence   1/1   1     1     6h13m
+teastore-recommender   2/2   2     2     6h13m
+teastore-registry      1/1   1     1     6h13m
+teastore-webui         1/1   1     1     6h13m
+22:32:38 teastore-auth          1/1   1     1     6h13m
+teastore-db            1/1   1     1     6h13m
+teastore-image         1/1   1     1     6h13m
+teastore-persistence   1/1   1     1     6h13m
+teastore-recommender   2/2   2     2     6h13m
+teastore-registry      1/1   1     1     6h13m
+teastore-webui         1/1   1     1     6h13m
+22:32:48 teastore-auth          1/1   1     1     6h13m
+teastore-db            1/1   1     1     6h13m
+teastore-image         1/1   1     1     6h13m
+teastore-persistence   1/1   1     1     6h13m
+teastore-recommender   2/2   2     2     6h13m
+teastore-registry      1/1   1     1     6h13m
+teastore-webui         1/1   1     1     6h13m
+22:32:58 teastore-auth          1/1   1     1     6h13m
+teastore-db            1/1   1     1     6h13m
+teastore-image         1/1   1     1     6h13m
+teastore-persistence   1/1   1     1     6h13m
+teastore-recommender   2/2   2     2     6h13m
+teastore-registry      1/1   1     1     6h13m
+teastore-webui         1/1   1     1     6h13m
+22:33:09 teastore-auth          1/1   1     1     6h14m
+teastore-db            1/1   1     1     6h14m
+teastore-image         1/1   1     1     6h14m
+teastore-persistence   1/1   1     1     6h14m
+teastore-recommender   2/2   2     2     6h14m
+teastore-registry      1/1   1     1     6h14m
+teastore-webui         1/1   1     1     6h14m
+22:33:19 teastore-auth          1/1   1     1     6h14m
+teastore-db            1/1   1     1     6h14m
+teastore-image         1/1   1     1     6h14m
+teastore-persistence   1/1   1     1     6h14m
+teastore-recommender   2/2   2     2     6h14m
+teastore-registry      1/1   1     1     6h14m
+teastore-webui         1/1   1     1     6h14m
+22:33:29 teastore-auth          1/1   1     1     6h14m
+teastore-db            1/1   1     1     6h14m
+teastore-image         1/1   1     1     6h14m
+teastore-persistence   1/1   1     1     6h14m
+teastore-recommender   2/2   2     2     6h14m
+teastore-registry      1/1   1     1     6h14m
+teastore-webui         1/1   1     1     6h14m
+22:33:40 teastore-auth          1/1   1     1     6h14m
+teastore-db            1/1   1     1     6h14m
+teastore-image         1/1   1     1     6h14m
+teastore-persistence   1/1   1     1     6h14m
+teastore-recommender   2/2   2     2     6h14m
+teastore-registry      1/1   1     1     6h14m
+teastore-webui         1/1   1     1     6h14m
+22:33:50 teastore-auth          1/1   1     1     6h14m
+teastore-db            1/1   1     1     6h14m
+teastore-image         1/1   1     1     6h14m
+teastore-persistence   1/1   1     1     6h14m
+teastore-recommender   2/2   2     2     6h14m
+teastore-registry      1/1   1     1     6h14m
+teastore-webui         1/1   1     1     6h14m
+22:34:00 teastore-auth          1/1   1     1     6h15m
+teastore-db            1/1   1     1     6h15m
+teastore-image         1/1   1     1     6h15m
+teastore-persistence   1/1   1     1     6h15m
+teastore-recommender   2/2   2     2     6h15m
+teastore-registry      1/1   1     1     6h15m
+teastore-webui         1/1   1     1     6h15m
+22:34:11 teastore-auth          1/1   1     1     6h15m
+teastore-db            1/1   1     1     6h15m
+teastore-image         1/1   1     1     6h15m
+teastore-persistence   1/1   1     1     6h15m
+teastore-recommender   2/2   2     2     6h15m
+teastore-registry      1/1   1     1     6h15m
+teastore-webui         1/1   1     1     6h15m
+22:34:21 teastore-auth          1/1   1     1     6h15m
+teastore-db            1/1   1     1     6h15m
+teastore-image         1/1   1     1     6h15m
+teastore-persistence   1/1   1     1     6h15m
+teastore-recommender   2/2   2     2     6h15m
+teastore-registry      1/1   1     1     6h15m
+teastore-webui         1/1   1     1     6h15m
+22:34:32 teastore-auth          1/1   1     1     6h15m
+teastore-db            1/1   1     1     6h15m
+teastore-image         1/1   1     1     6h15m
+teastore-persistence   1/1   1     1     6h15m
+teastore-recommender   2/2   2     2     6h15m
+teastore-registry      1/1   1     1     6h15m
+teastore-webui         1/1   1     1     6h15m
+22:34:42 teastore-auth          1/1   1     1     6h15m
+teastore-db            1/1   1     1     6h15m
+teastore-image         1/1   1     1     6h15m
+teastore-persistence   1/1   1     1     6h15m
+teastore-recommender   2/2   2     2     6h15m
+teastore-registry      1/1   1     1     6h15m
+teastore-webui         1/1   1     1     6h15m
+22:34:52 teastore-auth          1/1   1     1     6h15m
+teastore-db            1/1   1     1     6h15m
+teastore-image         1/1   1     1     6h15m
+teastore-persistence   1/1   1     1     6h15m
+teastore-recommender   2/2   2     2     6h15m
+teastore-registry      1/1   1     1     6h15m
+teastore-webui         1/1   1     1     6h15m
+22:35:02 teastore-auth          1/1   1     1     6h16m
+teastore-db            1/1   1     1     6h16m
+teastore-image         1/1   1     1     6h16m
+teastore-persistence   1/1   1     1     6h16m
+teastore-recommender   2/2   2     2     6h16m
+teastore-registry      1/1   1     1     6h16m
+teastore-webui         1/1   1     1     6h16m
+22:35:13 teastore-auth          1/1   1     1     6h16m
+teastore-db            1/1   1     1     6h16m
+teastore-image         1/1   1     1     6h16m
+teastore-persistence   1/1   1     1     6h16m
+teastore-recommender   2/2   2     2     6h16m
+teastore-registry      1/1   1     1     6h16m
+teastore-webui         1/1   1     1     6h16m
+22:35:23 teastore-auth          1/1   1     1     6h16m
+teastore-db            1/1   1     1     6h16m
+teastore-image         1/1   1     1     6h16m
+teastore-persistence   1/1   1     1     6h16m
+teastore-recommender   2/2   2     2     6h16m
+teastore-registry      1/1   1     1     6h16m
+teastore-webui         1/1   1     1     6h16m
+22:35:33 teastore-auth          1/1   1     1     6h16m
+teastore-db            1/1   1     1     6h16m
+teastore-image         1/1   1     1     6h16m
+teastore-persistence   1/1   1     1     6h16m
+teastore-recommender   2/2   2     2     6h16m
+teastore-registry      1/1   1     1     6h16m
+teastore-webui         1/1   1     1     6h16m
+22:35:44 teastore-auth          1/1   1     1     6h16m
+teastore-db            1/1   1     1     6h16m
+teastore-image         1/1   1     1     6h16m
+teastore-persistence   1/1   1     1     6h16m
+teastore-recommender   2/2   2     2     6h16m
+teastore-registry      1/1   1     1     6h16m
+teastore-webui         1/1   1     1     6h16m
+22:35:54 teastore-auth          1/1   1     1     6h16m
+teastore-db            1/1   1     1     6h16m
+teastore-image         1/1   1     1     6h16m
+teastore-persistence   1/1   1     1     6h16m
+teastore-recommender   2/2   2     2     6h16m
+teastore-registry      1/1   1     1     6h16m
+teastore-webui         1/1   1     1     6h16m
+22:36:04 teastore-auth          1/1   1     1     6h17m
+teastore-db            1/1   1     1     6h17m
+teastore-image         1/1   1     1     6h17m
+teastore-persistence   1/1   1     1     6h17m
+teastore-recommender   2/2   2     2     6h17m
+teastore-registry      1/1   1     1     6h17m
+teastore-webui         1/1   1     1     6h17m
+22:36:15 teastore-auth          1/1   1     1     6h17m
+teastore-db            1/1   1     1     6h17m
+teastore-image         1/1   1     1     6h17m
+teastore-persistence   1/1   1     1     6h17m
+teastore-recommender   2/2   2     2     6h17m
+teastore-registry      1/1   1     1     6h17m
+teastore-webui         1/1   1     1     6h17m
+22:36:25 teastore-auth          1/1   1     1     6h17m
+teastore-db            1/1   1     1     6h17m
+teastore-image         1/1   1     1     6h17m
+teastore-persistence   1/1   1     1     6h17m
+teastore-recommender   2/2   2     2     6h17m
+teastore-registry      1/1   1     1     6h17m
+teastore-webui         1/1   1     1     6h17m
+22:36:36 teastore-auth          1/1   1     1     6h17m
+teastore-db            1/1   1     1     6h17m
+teastore-image         1/1   1     1     6h17m
+teastore-persistence   1/1   1     1     6h17m
+teastore-recommender   2/2   2     2     6h17m
+teastore-registry      1/1   1     1     6h17m
+teastore-webui         1/1   1     1     6h17m
+22:36:46 teastore-auth          1/1   1     1     6h17m
+teastore-db            1/1   1     1     6h17m
+teastore-image         1/1   1     1     6h17m
+teastore-persistence   1/1   1     1     6h17m
+teastore-recommender   2/2   2     2     6h17m
+teastore-registry      1/1   1     1     6h17m
+teastore-webui         1/1   1     1     6h17m
+22:36:56 teastore-auth          1/1   1     1     6h17m
+teastore-db            1/1   1     1     6h17m
+teastore-image         1/1   1     1     6h17m
+teastore-persistence   1/1   1     1     6h17m
+teastore-recommender   2/2   2     2     6h17m
+teastore-registry      1/1   1     1     6h17m
+teastore-webui         1/1   1     1     6h17m
+22:37:07 teastore-auth          1/1   1     1     6h18m
+teastore-db            1/1   1     1     6h18m
+teastore-image         1/1   1     1     6h18m
+teastore-persistence   1/1   1     1     6h18m
+teastore-recommender   2/2   2     2     6h18m
+teastore-registry      1/1   1     1     6h18m
+teastore-webui         1/1   1     1     6h18m
+22:37:17 teastore-auth          1/1   1     1     6h18m
+teastore-db            1/1   1     1     6h18m
+teastore-image         1/1   1     1     6h18m
+teastore-persistence   1/1   1     1     6h18m
+teastore-recommender   2/2   2     2     6h18m
+teastore-registry      1/1   1     1     6h18m
+teastore-webui         1/1   1     1     6h18m
+22:37:28 teastore-auth          1/1   1     1     6h18m
+teastore-db            1/1   1     1     6h18m
+teastore-image         1/1   1     1     6h18m
+teastore-persistence   1/1   1     1     6h18m
+teastore-recommender   2/2   2     2     6h18m
+teastore-registry      1/1   1     1     6h18m
+teastore-webui         1/1   1     1     6h18m
